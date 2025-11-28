@@ -16,5 +16,5 @@
 ## Examples of other valid options; For more, please view the user guide
 ### java -jar RepoSense.jar --repos https://github.com/reposense/RepoSense.git
 
-java -jar RepoSense.jar  --repo https://github.com/Baellaaa/OOSDD_GroceryApp_Sprint4_Daniella.git
+java -jar RepoSense.jar  --repo https://github.com/Windesheim-HBO-ICT/OOSDD_GroceryApp_Sprint6_Studenten.git
  
