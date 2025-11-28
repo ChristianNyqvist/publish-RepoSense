@@ -1,16 +1,36 @@
-Nov 28, 2025 9:09:23 AM reposense.system.LogsManager addFileHandler
+Nov 28, 2025 9:11:06 AM reposense.system.LogsManager addFileHandler
 INFO: Log temp folder has been successfully created
-Nov 28, 2025 9:09:23 AM reposense.model.CliRunConfiguration getRepoConfigurations
-WARNING: hhttps://github.com/Baellaaa/OOSDD_GroceryApp_Sprint4_Daniella.git is an invalid remote URL.
-reposense.parser.exceptions.InvalidLocationException: hhttps://github.com/Baellaaa/OOSDD_GroceryApp_Sprint4_Daniella.git is an invalid remote URL.
-	at reposense.model.RepoLocation.getRemoteRepoNameAndOrg(RepoLocation.java:201)
-	at reposense.model.RepoLocation.<init>(RepoLocation.java:85)
-	at reposense.model.CliRunConfiguration.getRepoConfigurations(CliRunConfiguration.java:34)
-	at reposense.RepoSense.main(RepoSense.java:59)
+Nov 28, 2025 9:11:06 AM reposense.git.GitConfig getGlobalGitLfsConfig
+WARNING: Could not get global git lfs config
+java.lang.RuntimeException: reposense.system.CommandRunnerProcessException: Error returned from command git config --global --list on path . :
+fatal: unable to read config file '/home/runner/.gitconfig': No such file or directory
 
-Nov 28, 2025 9:09:23 AM reposense.RepoSense main
-WARNING: All repository locations are invalid.
-reposense.parser.exceptions.ParseException: All repository locations are invalid.
-	at reposense.model.CliRunConfiguration.getRepoConfigurations(CliRunConfiguration.java:45)
-	at reposense.RepoSense.main(RepoSense.java:59)
+	at reposense.system.CommandRunner.runCommand(CommandRunner.java:23)
+	at reposense.git.GitConfig.getGitGlobalConfig(GitConfig.java:90)
+	at reposense.git.GitConfig.getGlobalGitLfsConfig(GitConfig.java:44)
+	at reposense.RepoSense.main(RepoSense.java:79)
+Caused by: reposense.system.CommandRunnerProcessException: Error returned from command git config --global --list on path . :
+fatal: unable to read config file '/home/runner/.gitconfig': No such file or directory
 
+	at reposense.system.CommandRunnerProcess.waitForProcess(CommandRunnerProcess.java:46)
+	at reposense.system.CommandRunner.runCommand(CommandRunner.java:21)
+	... 3 more
+
+Nov 28, 2025 9:11:06 AM reposense.report.RepoCloner spawnCloneProcess
+INFO: Cloning in parallel from https://github.com/Baellaaa/OOSDD_GroceryApp_Sprint4_Daniella.git...
+Nov 28, 2025 9:11:06 AM reposense.report.RepoCloner waitForCloneProcess
+INFO: Waiting for cloning of https://github.com/Baellaaa/OOSDD_GroceryApp_Sprint4_Daniella.git to complete...
+Nov 28, 2025 9:11:07 AM reposense.report.RepoCloner waitForCloneProcess
+INFO: Cloning of https://github.com/Baellaaa/OOSDD_GroceryApp_Sprint4_Daniella.git completed!
+Nov 28, 2025 9:11:07 AM reposense.report.ReportGenerator analyzeRepos
+INFO: [1/1] Analyzing https://github.com/Baellaaa/OOSDD_GroceryApp_Sprint4_Daniella.git (main)...
+Nov 28, 2025 9:11:07 AM reposense.report.ReportGenerator updateRepoConfig
+INFO: https://github.com/Baellaaa/OOSDD_GroceryApp_Sprint4_Daniella.git (main) does not contain a standalone config file.
+Nov 28, 2025 9:11:07 AM reposense.report.ReportGenerator updateAuthorList
+INFO: https://github.com/Baellaaa/OOSDD_GroceryApp_Sprint4_Daniella.git (main) has no authors specified, using all authors by default.
+Nov 28, 2025 9:11:07 AM reposense.report.ReportGenerator analyzeRepos
+WARNING: No authors found with commits for https://github.com/Baellaaa/OOSDD_GroceryApp_Sprint4_Daniella.git (main).
+Nov 28, 2025 9:11:07 AM reposense.report.ReportGenerator generateReposReport
+INFO: The report is generated at /home/runner/work/publish-RepoSense/publish-RepoSense/reposense-report
+Nov 28, 2025 9:11:07 AM reposense.RepoSense main
+INFO: Elapsed processing time: 0.87 second(s)
