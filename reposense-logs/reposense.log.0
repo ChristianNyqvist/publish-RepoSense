@@ -1,6 +1,6 @@
-Nov 28, 2025 9:07:34 AM reposense.system.LogsManager addFileHandler
+Nov 28, 2025 9:09:23 AM reposense.system.LogsManager addFileHandler
 INFO: Log temp folder has been successfully created
-Nov 28, 2025 9:07:34 AM reposense.model.CliRunConfiguration getRepoConfigurations
+Nov 28, 2025 9:09:23 AM reposense.model.CliRunConfiguration getRepoConfigurations
 WARNING: hhttps://github.com/Baellaaa/OOSDD_GroceryApp_Sprint4_Daniella.git is an invalid remote URL.
 reposense.parser.exceptions.InvalidLocationException: hhttps://github.com/Baellaaa/OOSDD_GroceryApp_Sprint4_Daniella.git is an invalid remote URL.
 	at reposense.model.RepoLocation.getRemoteRepoNameAndOrg(RepoLocation.java:201)
@@ -8,7 +8,7 @@ reposense.parser.exceptions.InvalidLocationException: hhttps://github.com/Baella
 	at reposense.model.CliRunConfiguration.getRepoConfigurations(CliRunConfiguration.java:34)
 	at reposense.RepoSense.main(RepoSense.java:59)
 
-Nov 28, 2025 9:07:34 AM reposense.RepoSense main
+Nov 28, 2025 9:09:23 AM reposense.RepoSense main
 WARNING: All repository locations are invalid.
 reposense.parser.exceptions.ParseException: All repository locations are invalid.
 	at reposense.model.CliRunConfiguration.getRepoConfigurations(CliRunConfiguration.java:45)
