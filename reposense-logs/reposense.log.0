@@ -1,6 +1,6 @@
-Nov 28, 2025 9:11:06 AM reposense.system.LogsManager addFileHandler
+Nov 28, 2025 9:25:24 AM reposense.system.LogsManager addFileHandler
 INFO: Log temp folder has been successfully created
-Nov 28, 2025 9:11:06 AM reposense.git.GitConfig getGlobalGitLfsConfig
+Nov 28, 2025 9:25:24 AM reposense.git.GitConfig getGlobalGitLfsConfig
 WARNING: Could not get global git lfs config
 java.lang.RuntimeException: reposense.system.CommandRunnerProcessException: Error returned from command git config --global --list on path . :
 fatal: unable to read config file '/home/runner/.gitconfig': No such file or directory
@@ -16,21 +16,21 @@ fatal: unable to read config file '/home/runner/.gitconfig': No such file or dir
 	at reposense.system.CommandRunner.runCommand(CommandRunner.java:21)
 	... 3 more
 
-Nov 28, 2025 9:11:06 AM reposense.report.RepoCloner spawnCloneProcess
+Nov 28, 2025 9:25:24 AM reposense.report.RepoCloner spawnCloneProcess
 INFO: Cloning in parallel from https://github.com/Baellaaa/OOSDD_GroceryApp_Sprint4_Daniella.git...
-Nov 28, 2025 9:11:06 AM reposense.report.RepoCloner waitForCloneProcess
+Nov 28, 2025 9:25:24 AM reposense.report.RepoCloner waitForCloneProcess
 INFO: Waiting for cloning of https://github.com/Baellaaa/OOSDD_GroceryApp_Sprint4_Daniella.git to complete...
-Nov 28, 2025 9:11:07 AM reposense.report.RepoCloner waitForCloneProcess
+Nov 28, 2025 9:25:25 AM reposense.report.RepoCloner waitForCloneProcess
 INFO: Cloning of https://github.com/Baellaaa/OOSDD_GroceryApp_Sprint4_Daniella.git completed!
-Nov 28, 2025 9:11:07 AM reposense.report.ReportGenerator analyzeRepos
+Nov 28, 2025 9:25:25 AM reposense.report.ReportGenerator analyzeRepos
 INFO: [1/1] Analyzing https://github.com/Baellaaa/OOSDD_GroceryApp_Sprint4_Daniella.git (main)...
-Nov 28, 2025 9:11:07 AM reposense.report.ReportGenerator updateRepoConfig
+Nov 28, 2025 9:25:25 AM reposense.report.ReportGenerator updateRepoConfig
 INFO: https://github.com/Baellaaa/OOSDD_GroceryApp_Sprint4_Daniella.git (main) does not contain a standalone config file.
-Nov 28, 2025 9:11:07 AM reposense.report.ReportGenerator updateAuthorList
+Nov 28, 2025 9:25:25 AM reposense.report.ReportGenerator updateAuthorList
 INFO: https://github.com/Baellaaa/OOSDD_GroceryApp_Sprint4_Daniella.git (main) has no authors specified, using all authors by default.
-Nov 28, 2025 9:11:07 AM reposense.report.ReportGenerator analyzeRepos
+Nov 28, 2025 9:25:25 AM reposense.report.ReportGenerator analyzeRepos
 WARNING: No authors found with commits for https://github.com/Baellaaa/OOSDD_GroceryApp_Sprint4_Daniella.git (main).
-Nov 28, 2025 9:11:07 AM reposense.report.ReportGenerator generateReposReport
+Nov 28, 2025 9:25:25 AM reposense.report.ReportGenerator generateReposReport
 INFO: The report is generated at /home/runner/work/publish-RepoSense/publish-RepoSense/reposense-report
-Nov 28, 2025 9:11:07 AM reposense.RepoSense main
-INFO: Elapsed processing time: 0.87 second(s)
+Nov 28, 2025 9:25:25 AM reposense.RepoSense main
+INFO: Elapsed processing time: 0.83 second(s)
